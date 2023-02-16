@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  min-height: 100vh;
+}
+
+#sidebar {
+  width: 300px;
+  background: linear-gradient(to right top, #001845, #023e7d);
+  color: #fff;
+  padding: 15px 30px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+#sidebar ul {
+  margin-top: 45px;
+}
+#sidebar li:not(:last-child) {
+  margin-bottom: 30px;
+}
+#sidebar a {
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s ease;
+  padding: 0 5px;
+}
+#sidebar a:hover {
+  font-weight: 700;
+  background-color: #fff;
+  padding: 5px 5px;
+  color: #001845;
+}
+
+.hide {
+  display: none;
+}
+
+#rightside {
+  flex: 1;
+}
+#rightside header {
+  height: 50px;
+  background-color: #fff;
+  padding: 15px 30px;
+}
+#rightside header .btn {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+#rightside header .btn i {
+  color: #001845;
+}
+#rightside .content {
+  background-color: #e5e5e5;
+  height: calc(100vh - 50px);
+  padding: 30px;
+}
+#rightside .content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rightside .content__title h2 {
+  color: #001845;
+}
+#rightside .content .content-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-rows: repeat(2, 160px);
+  grid-auto-flow: column;
+  gap: 40px;
+  margin-top: 60px;
+}
+#rightside .content .content-cards .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  cursor: pointer;
+}
+#rightside .content .content-cards .box h3 {
+  color: #001845;
+  cursor: pointer;
+}
+@media screen and (max-width: 1330px) {
+  #rightside .content .content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 120px);
+    grid-auto-flow: row;
+    gap: 15px;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

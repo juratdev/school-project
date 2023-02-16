@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maktab</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="loaded()" onkeyup="keyUp(event)">
+
+  <div class="wrapper">
+
+    <section class="section">
+      <!-- ASIDE -->
+      <aside id="sidebar">
+
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Bosh sahifa</a></li>
+          <li><a href="#">O’qituvchilar</a></li>
+          <li><a href="#">O’quvchilar</a></li>
+          <li><a href="#">Xodimlar</a></li>
+          <li><a href="#">Fanlar</a></li>
+          <li><a href="#">Xonalar</a></li>
+          <li><a href="#">Dars jadvallari</a></li>
+        </ul>
+
+      </aside>
+      <!-- MAIN-RIGHT-SIDE -->
+      <main id="rightside">
+
+        <header>
+          <button class="btn" onclick="toggleSidebar()"><i class="fas fa-bars fa-2xl"></i></button>
+        </header>
+
+        <div class="content">
+          <div class="content__title">
+            <h2>Bo’limlar</h2>
+            <h2 id="selected"></h2>
+          </div>
+
+          <div id="cards" class="content-cards">
+            <div class="box">
+              <h3>O’qituvchilar</h3>
+            </div>
+            <div class="box">
+              <h3>O’quvchilar</h3>
+            </div>
+            <div class="box">
+              <h3>Xodimlar</h3>
+            </div>
+            <div class="box">
+              <h3>Fanlar</h3>
+            </div>
+            <div class="box">
+              <h3>Xonalar</h3>
+            </div>
+            <div class="box">
+              <h3>Dars jadvallari</h3>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </section>
+  </div>
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
