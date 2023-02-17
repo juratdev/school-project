@@ -95,21 +95,16 @@ body {
   }
 
   .content {
+    background-color: #e5e5e5;
+    height: calc(100vh - 50px);
+    padding: 30px;
 
     &__title {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      h2 {
-        color: #001845;
-      }
     }
 
-
-    background-color: #e5e5e5;
-    height: calc(100vh - 50px);
-    padding: 30px;
 
     .content-cards {
       display: grid;

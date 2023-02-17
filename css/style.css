@@ -86,9 +86,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#rightside .content__title h2 {
-  color: #001845;
-}
 #rightside .content .content-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
