@@ -13,12 +13,11 @@
 </head>
 
 <body onload="loaded()" onkeyup="keyUp(event)">
-
   <div class="wrapper">
 
     <section class="section">
       <!-- ASIDE -->
-      <aside id="sidebar">
+      <aside id="sidebar" class="dark-sidebar">
 
         <ul>
           <li><a href="#">Menu</a></li>
@@ -32,11 +31,19 @@
         </ul>
 
       </aside>
-      <!-- MAIN-RIGHT-SIDE -->
+      <!-- ASIDE-END -->
+
+      <!-- MAIN-RIGHT -->
       <main id="rightside">
 
-        <header>
+        <header class="navbar">
+
           <button class="btn" onclick="toggleSidebar()"><i class="fas fa-bars fa-2xl"></i></button>
+
+          <div class="darkMode">
+            <button class="darkBtn">Kun / Tun</button>
+          </div>
+
         </header>
 
         <div class="content">
@@ -69,8 +76,9 @@
         </div>
 
       </main>
-
+      <!-- MAIN-RIGHT-END -->
     </section>
+
   </div>
 
 

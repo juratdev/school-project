@@ -2,15 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-ul,
-li {
-  list-style: none;
+  transition: all 0.3s ease;
 }
 
 body {
-  font-family: sans-serif
+  font-family: sans-serif;
 }
 
 .wrapper {
@@ -29,6 +25,8 @@ body {
   min-height: 100vh;
 }
 
+//* SIDEBAR-START
+
 #sidebar {
   width: 300px;
   background: linear-gradient(to right top, #001845, #023e7d);
@@ -39,13 +37,12 @@ body {
 
   ul {
     margin-top: 45px;
+    list-style: none;
   }
-
 
   li:not(:last-child) {
     margin-bottom: 30px;
   }
-
 
   a {
     font-size: 18px;
@@ -64,18 +61,27 @@ body {
     padding: 5px 5px;
     color: #001845;
   }
-
-
 }
+
+// SIDEBAR-END
+
+// SIDEBAR-HIDE-START
 
 .hide {
   display: none;
 }
 
+// SIDEBAR-HIDE-END
+
+//* RIGHRSIDE-START
+
 #rightside {
   flex: 1;
 
-  header {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
     background-color: #fff;
     padding: 15px 30px;
@@ -87,9 +93,21 @@ body {
       cursor: pointer;
       padding: 5px 10px;
 
-
       i {
         color: #001845;
+      }
+    }
+
+    .darkMode {
+      .darkBtn {
+        padding: 5px 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        background: linear-gradient(to left top, #001845, #023e7d);
       }
     }
   }
@@ -103,8 +121,11 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
 
+      .title__text {
+        color: #001845;
+      }
+    }
 
     .content-cards {
       display: grid;
@@ -143,3 +164,65 @@ body {
 
   }
 }
+
+// RIGHRSIDE-END
+
+//* DARK-MODE-START
+
+#dark {
+
+  #sidebar {
+    width: 300px;
+    background: linear-gradient(to right top, #000, #252323);
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      font-weight: 700;
+      background-color: #023e7d;
+      padding: 5px 5px;
+      color: #fff;
+    }
+  }
+
+  .navbar {
+    background-color: #252323;
+
+    .btn {
+      background-color: #252323;
+
+      i {
+        color: #fff;
+      }
+    }
+
+  }
+
+  .content {
+    background-color: #1a1a1a;
+
+    &__title {
+
+      .title__text {
+        color: #fff;
+      }
+
+    }
+
+    .content-cards {
+      .box {
+        background-color: #023e7d;
+        box-shadow: none;
+
+        h3 {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// DARK-MODE-END
