@@ -9,6 +9,10 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -19,7 +23,7 @@ body {
   min-height: 100vh;
 }
 
-#sidebar {
+.sidebar {
   width: 300px;
   background: linear-gradient(to right top, #001845, #023e7d);
   color: #fff;
@@ -27,14 +31,14 @@ body {
   transition: 0.3s;
   overflow: hidden;
 }
-#sidebar ul {
+.sidebar ul {
   margin-top: 45px;
   list-style: none;
 }
-#sidebar li:not(:last-child) {
+.sidebar li:not(:last-child) {
   margin-bottom: 30px;
 }
-#sidebar a {
+.sidebar a {
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 1px;
@@ -44,7 +48,7 @@ body {
   transition: 0.5s ease;
   padding: 0 5px;
 }
-#sidebar a:hover {
+.sidebar a:hover {
   font-weight: 700;
   background-color: #fff;
   padding: 5px 5px;
@@ -55,10 +59,10 @@ body {
   display: none;
 }
 
-#rightside {
+.rightside {
   flex: 1;
 }
-#rightside .navbar {
+.rightside .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,17 +70,17 @@ body {
   background-color: #fff;
   padding: 15px 30px;
 }
-#rightside .navbar .btn {
+.rightside .navbar .btn {
   outline: none;
   border: none;
   background-color: #fff;
   cursor: pointer;
   padding: 5px 10px;
 }
-#rightside .navbar .btn i {
+.rightside .navbar .btn i {
   color: #001845;
 }
-#rightside .navbar .darkMode .darkBtn {
+.rightside .navbar .darkMode .darkBtn {
   padding: 5px 10px;
   cursor: pointer;
   border: none;
@@ -86,28 +90,27 @@ body {
   font-weight: 700;
   background: linear-gradient(to left top, #001845, #023e7d);
 }
-#rightside .content {
+.rightside .content {
   background-color: #e5e5e5;
   height: calc(100vh - 50px);
   padding: 30px;
 }
-#rightside .content__title {
+.rightside .content__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#rightside .content__title .title__text {
+.rightside .content__title .title__text {
   color: #001845;
 }
-#rightside .content .content-cards {
+.rightside .content .cards-style {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-template-rows: repeat(2, 160px);
-  grid-auto-flow: column;
   gap: 40px;
   margin-top: 60px;
 }
-#rightside .content .content-cards .box {
+.rightside .content .cards-style .box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,54 +119,85 @@ body {
   border-radius: 11px;
   cursor: pointer;
 }
-#rightside .content .content-cards .box h3 {
+.rightside .content .cards-style .box h3 {
   color: #001845;
   cursor: pointer;
 }
 @media screen and (max-width: 1330px) {
-  #rightside .content .content-cards {
+  .rightside .content .cards-style {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(3, 120px);
-    grid-auto-flow: row;
     gap: 15px;
     margin-top: 30px;
   }
 }
+.rightside .content__table {
+  text-align: center;
+  margin-top: 20px;
+}
+.rightside .content__table-title {
+  color: #001845;
+}
+.rightside .content__table table {
+  width: 100%;
+  background: linear-gradient(to right top, #001845, #023e7d);
+  margin-top: 30px;
+}
+.rightside .content__table table th,
+.rightside .content__table table td {
+  text-align: center;
+  border-collapse: collapse;
+  border-right: 1px solid rgb(176, 176, 176);
+  border-bottom: 1px solid rgb(176, 176, 176);
+  color: #fff;
+  padding: 8px 10px;
+}
+.rightside .content__table table .address-btn {
+  padding: 5px 8px;
+  background-color: #001845;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-#dark #sidebar {
+.dark .sidebar {
   width: 300px;
   background: linear-gradient(to right top, #000, #252323);
   color: #fff;
 }
-#dark #sidebar a {
+.dark .sidebar a {
   color: #fff;
 }
-#dark #sidebar a:hover {
+.dark .sidebar a:hover {
   font-weight: 700;
   background-color: #023e7d;
   padding: 5px 5px;
   color: #fff;
 }
-#dark .navbar {
+.dark .navbar {
   background-color: #252323;
 }
-#dark .navbar .btn {
+.dark .navbar .btn {
   background-color: #252323;
 }
-#dark .navbar .btn i {
+.dark .navbar .btn i {
   color: #fff;
 }
-#dark .content {
+.dark .content {
   background-color: #1a1a1a;
 }
-#dark .content__title .title__text {
+.dark .content__title .title__text {
   color: #fff;
 }
-#dark .content .content-cards .box {
+.dark .content .cards-style .box {
   background-color: #023e7d;
   box-shadow: none;
 }
-#dark .content .content-cards .box h3 {
+.dark .content .cards-style .box h3 {
+  color: #fff;
+}
+.dark .content .content__table-title {
   color: #fff;
 }/*# sourceMappingURL=style.css.map */

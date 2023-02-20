@@ -1,9 +1,11 @@
 const loaded = () => console.log("Sahifa yuklandi...");
 
-const sidebar = document.getElementById("sidebar");
-const cards = document.getElementById("cards");
-const selected = document.getElementById("selected");
+const sidebar = document.querySelector(".sidebar");
+const cards = document.querySelector(".cards");
+const selected = document.querySelector(".selected");
+const dark = document.querySelector(".dark");
 const darkBtn = document.querySelector(".darkBtn");
+const addressBtn = document.querySelectorAll('.numbers button');
 
 const toggleSidebar = () => {
   if (sidebar.classList.contains("hide")) {
@@ -15,15 +17,21 @@ const keyUp = (e) => {
   if (e.key == "Escape") sidebar.classList.add("hide");
 }
 
+darkBtn.onclick = () => {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.remove("dark");
+  } else document.body.classList.add("dark")
+}
+
+addressBtn.forEach(button => {
+  button.onclick = () => {
+    alert(button.value);
+  }
+})
+
 for (const card of cards.children) {
   card.onclick = () => {
     const menu = card.children[0].innerHTML;
     selected.innerHTML = menu;
   }
-}
-
-darkBtn.onclick = () => {
-  if (document.body.id === "dark") {
-    document.body.id = "";
-  } else document.body.id = "dark";
 }
