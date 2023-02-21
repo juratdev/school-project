@@ -176,17 +176,19 @@ a {
 
       table {
         width: 100%;
-        // border-radius: 8px;
+        // border-radius: 5px;
         background: linear-gradient(to right top, #001845, #023e7d);
         margin-top: 30px;
+        border-collapse: collapse;
 
+        th {
+          font-size: 18px;
+        }
 
         th,
         td {
           text-align: center;
-          border-collapse: collapse;
-          border-right: 1px solid rgb(176, 176, 176);
-          border-bottom: 1px solid rgb(176, 176, 176);
+          border: 1px solid #e5e5e5f7;
           color: #fff;
           padding: 8px 10px;
         }
@@ -268,6 +270,15 @@ a {
     .content__table-title {
       color: #fff;
     }
+
+    .table {
+
+      th,
+      td {
+        border: 1px solid #888;
+      }
+    }
+
   }
 }
 

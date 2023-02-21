@@ -143,13 +143,15 @@ a {
   width: 100%;
   background: linear-gradient(to right top, #001845, #023e7d);
   margin-top: 30px;
+  border-collapse: collapse;
+}
+.rightside .content__table table th {
+  font-size: 18px;
 }
 .rightside .content__table table th,
 .rightside .content__table table td {
   text-align: center;
-  border-collapse: collapse;
-  border-right: 1px solid rgb(176, 176, 176);
-  border-bottom: 1px solid rgb(176, 176, 176);
+  border: 1px solid rgba(229, 229, 229, 0.968627451);
   color: #fff;
   padding: 8px 10px;
 }
@@ -200,4 +202,8 @@ a {
 }
 .dark .content .content__table-title {
   color: #fff;
+}
+.dark .content .table th,
+.dark .content .table td {
+  border: 1px solid #888;
 }/*# sourceMappingURL=style.css.map */
