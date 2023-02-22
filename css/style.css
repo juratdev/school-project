@@ -139,6 +139,40 @@ a {
 .rightside .content__table-title {
   color: #001845;
 }
+.rightside .content__table-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.rightside .content__table-search input {
+  outline: none;
+  padding: 4px 8px;
+  color: #001845;
+  font-size: 16px;
+  font-weight: bold;
+}
+.rightside .content__table-search ::-moz-placeholder {
+  font-size: 14px;
+  color: rgba(0, 24, 69, 0.6941176471);
+}
+.rightside .content__table-search :-ms-input-placeholder {
+  font-size: 14px;
+  color: rgba(0, 24, 69, 0.6941176471);
+}
+.rightside .content__table-search ::placeholder {
+  font-size: 14px;
+  color: rgba(0, 24, 69, 0.6941176471);
+}
+.rightside .content__table-search button {
+  padding: 8px 10px;
+  background: linear-gradient(to left top, #001845, #023e7d);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 .rightside .content__table table {
   width: 100%;
   background: linear-gradient(to right top, #001845, #023e7d);
