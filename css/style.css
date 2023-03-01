@@ -218,6 +218,12 @@ a {
   padding: 5px 5px;
   color: #fff;
 }
+.dark .sidebar .active-dark {
+  font-weight: 700;
+  background-color: #023e7d;
+  padding: 5px 5px;
+  color: #fff;
+}
 .dark .navbar {
   background-color: #252323;
 }
