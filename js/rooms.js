@@ -47,3 +47,25 @@ rooms.forEach((obj, i) => {
   tbody.appendChild(row)
 })
 }
+// Qidirish qismi
+const findUser = () => {
+  tbody.innerHTML = "";
+  let filter = document.querySelector("#search").value
+  const data = rooms.filter((obj, i) => 
+    obj.name.includes(filter) || obj.number.includes(filter) 
+  )
+
+  // Qator ochamiz
+  data.forEach((obj, i) => {
+    const row = document.createElement("tr");
+    row.id = obj.id;
+    row.innerHTML = `
+<td>${i + 1}</td>
+<td>${obj.name}</td>
+<td>${obj.number}</td>
+<td><button onclick="trashBtn(${obj.id})" class="trash"><i class="fas fa-trash"></i></button></td>`;
+
+    tbody.appendChild(row)
+  })
+
+}

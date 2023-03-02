@@ -57,3 +57,28 @@ const loaded = () => {
     tbody.appendChild(row);
   })
 }
+
+// Qidirish qismi
+const findUser = () => {
+  tbody.innerHTML = "";
+  let filter = document.querySelector("#search").value;
+
+  const data = students.filter((obj, i) => 
+  obj.name.includes(filter) || obj.surname.includes(filter)
+  )
+  // Qator ochish
+  data.forEach((obj, i) => {
+    const row = document.createElement("tr");
+    row.id = obj.id;
+
+    row.innerHTML = `
+      <td>${i + 1}</td>
+      <td>${obj.name}</td>
+      <td>${obj.surname}</td>
+      <td>${obj.class}</td>
+      <td>${obj.phone}</td>
+      <td><button onclick="trashBtn(${obj.id})" class="trash"><i class="fas fa-trash"></i></button></td>
+    `
+    tbody.appendChild(row)
+  })
+}
