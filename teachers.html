@@ -18,15 +18,14 @@
     <section class="section">
       <!-- ASIDE -->
       <aside class="sidebar">
-
+        <h2 class="sidebar__title">Maktab</h2>
         <ul>
-          <li><a href="#">Menu</a></li>
           <li><a href="./index.html">Bosh sahifa</a></li>
           <li><a class="active active-dark" href="#">O’qituvchilar</a></li>
           <li><a href="./students.html">O’quvchilar</a></li>
-          <li><a href="#">Xodimlar</a></li>
-          <li><a href="#">Fanlar</a></li>
-          <li><a href="#">Xonalar</a></li>
+          <li><a href="./staffes.html">Xodimlar</a></li>
+          <li><a href="./students.html">Fanlar</a></li>
+          <li><a href="./rooms.html">Xonalar</a></li>
           <li><a href="#">Dars jadvallari</a></li>
         </ul>
 
@@ -46,88 +45,46 @@
 
         </header>
 
-        <div class="content">
+        <section class="content">
           <div class="content__title">
-            <h2 class="title__text">Bo’lim</h2>
+            <h2 class="title__text">O'qituvchilar</h2>
             <h2 class="selected title__text"></h2>
           </div>
 
           <div class="content__table">
-            <h2 class="content__table-title">O'qituvchilar jadvali</h2>
-
-            <div class="content__table-search">
+            <!-- <div class="content__table-search">
               <form id="search-form" class="teacher">
                 <input type="search" id="search" name="search" placeholder="Ism kiriting...">
                 <button>Qidiruv</button>
               </form>
+            </div> -->
 
-            </div>
-            <table class="numbers table" id="teachers">
+            <table class="table" id="table">
               <thead>
                 <tr>
+                  <th>#</th>
                   <th>Ismi</th>
                   <th>Familiyasi</th>
                   <th>Fani</th>
-                  <th>Manzili</th>
+                  <th>Telefon nomeri</th>
+                  <th>O'chirish</th>
                 </tr>
               </thead>
-              <!-- <tbody>
-              <tr>
-                <td>Jurat</td>
-                <td>Raximbayev</td>
-                <td>Matematika</td>
-                <td><button value="Xorazm viloyati" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              <tr>
-                <td>Muhammadali</td>
-                <td>Ruzimov</td>
-                <td>Informatika</td>
-                <td><button value="Toshkent shahar" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              <tr>
-                <td>Umar</td>
-                <td>Sadullayev</td>
-                <td>Jismoniy tarbiya</td>
-                <td><button value="Andijon viloyati" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              <tr>
-                <td>Kamol</td>
-                <td>Soliyev</td>
-                <td>Tarix</td>
-                <td><button value="Termiz shahar" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              <tr>
-                <td>Jahongir</td>
-                <td>Olimov</td>
-                <td>Informatika</td>
-                <td><button value="Urganch shahar" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              <tr>
-                <td>Alisher</td>
-                <td>Abdullayev</td>
-                <td>Geografiya</td>
-                <td><button value="Termiz shahar" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              <tr>
-                <td>Shuxrat</td>
-                <td>Rahmonov</td>
-                <td>Iqtisod</td>
-                <td><button value="Samarqand viloyati" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              <tr>
-                <td>Daston</td>
-                <td>Rahimov</td>
-                <td>Rus tili</td>
-                <td><button value="Surxondaryo viloyati" class="address-btn">Manzilni ko'rish</button></td>
-              </tr>
-              </tbody> -->
               <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Jurat</td>
+                  <td>Raximbayev</td>
+                  <td>Matematika</td>
+                  <td>91 429 74 78</td>
+                  <td><button class="trash"><i class="fas fa-trash"></i></button></td>
+                </tr>
 
               </tbody>
             </table>
           </div>
 
-        </div>
+        </section>
 
       </main>
       <!-- MAIN-RIGHT-END -->
@@ -136,7 +93,8 @@
   </div>
 
 
-  <script src="./js/main.js"></script>
+ <script src="./js/global.js"></script>
+  <script src="./js/teachers.js"></script>
 </body>
 
 </html>

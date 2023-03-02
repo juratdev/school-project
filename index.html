@@ -15,18 +15,17 @@
 <body onload="loaded()" onkeyup="keyUp(event)">
   <div class="wrapper">
 
-    <section class="section">
+    <div class="section">
       <!-- ASIDE -->
       <aside class="sidebar">
-
+        <h2 class="sidebar__title">Maktab</h2>
         <ul>
-          <li><a href="#">Menu</a></li>
           <li><a class="active active-dark" href="./index.html">Bosh sahifa</a></li>
           <li><a href="./teachers.html">O’qituvchilar</a></li>
           <li><a href="./students.html">O’quvchilar</a></li>
-          <li><a href="#">Xodimlar</a></li>
-          <li><a href="#">Fanlar</a></li>
-          <li><a href="#">Xonalar</a></li>
+          <li><a href="./staffes.html">Xodimlar</a></li>
+          <li><a href="./sciences.html">Fanlar</a></li>
+          <li><a href="./rooms.html">Xonalar</a></li>
           <li><a href="#">Dars jadvallari</a></li>
         </ul>
 
@@ -35,7 +34,7 @@
 
       <!-- MAIN-RIGHT -->
       <main class="rightside">
-
+        <!-- NAVBAR-START -->
         <header class="navbar">
 
           <button class="btn" onclick="toggleSidebar()"><i class="fas fa-bars fa-2xl"></i></button>
@@ -45,44 +44,24 @@
           </div>
 
         </header>
-
-        <div class="content">
+        <!-- NAVBAR-END -->
+        <!-- CONTENT-CARDS-START -->
+        <section class="content">
           <div class="content__title">
-            <h2 class="title__text">Bo’lim</h2>
-            <h2 class="selected title__text"></h2>
+            <h2 class="title__text">Bosh sahifa</h2>
           </div>
-
-          <div class="cards cards-style">
-            <a href="./teachers.html" class="box">
-              <h3>O’qituvchilar</h3>
-            </a>
-            <a href="./students.html" class="box">
-              <h3>O’quvchilar</h3>
-            </a>
-            <div class="box">
-              <h3>Xodimlar</h3>
-            </div>
-            <div class="box">
-              <h3>Fanlar</h3>
-            </div>
-            <div class="box">
-              <h3>Xonalar</h3>
-            </div>
-            <div class="box">
-              <h3>Dars jadvallari</h3>
-            </div>
-          </div>
-
-        </div>
+          <div class="cards cards-style"></div>
+        </section>
+        <!-- CONTENT-CARDS-END -->
 
       </main>
       <!-- MAIN-RIGHT-END -->
-    </section>
+    </div>
 
   </div>
 
-
-  <script src="./js/main.js"></script>
+  <script src="./js/global.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
