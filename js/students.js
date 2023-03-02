@@ -29,6 +29,12 @@ const students = [{
   }
 ]
 
+// Delete tr
+const trashBtn = (id) => {
+  const tr = document.getElementById(id)
+  tr.remove();
+}
+
 const table = document.getElementById("table");
 const tbody = table.children[1];
 
@@ -39,13 +45,14 @@ const loaded = () => {
   students.forEach((obj, i) => {
     // qator ochamiz
     const row = document.createElement("tr");
+    row.id = obj.id;
     row.innerHTML = `
   <td>${i + 1}</td>
   <td>${obj.name}</td>
   <td>${obj.surname}</td>
   <td>${obj.class}</td>
   <td>${obj.phone}</td>
-  <td><button ${onclick="trashBtn()"} class="trash"><i class="fas fa-trash"></i></button></td>`;
+  <td><button onclick="trashBtn(${obj.id})" class="trash"><i class="fas fa-trash"></i></button></td>`;
 
     tbody.appendChild(row);
   })

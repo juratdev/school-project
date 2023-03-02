@@ -1,29 +1,35 @@
 // Fanlarni shakillantirish
 const sciences = [{
-    id: 1,
+    id: 13,
     supject: 'Matematika'
   },
   {
-    id: 2,
+    id: 14,
     supject: 'Informatika'
   },
   {
-    id: 3,
+    id: 15,
     supject: 'Jismoniy tarbiya'
   },
   {
-    id: 4,
+    id: 16,
     supject: 'Ona-tili'
   },
   {
-    id: 5,
+    id: 17,
     supject: 'Fizika'
   },
   {
-    id: 6,
+    id: 18,
     supject: 'Tarix'
   }
 ]
+
+// Delete tr
+const trashBtn = (id) => {
+  const tr = document.getElementById(id);
+  tr.remove();
+}
 
 const table = document.getElementById("table");
 const tbody = table.children[1];
@@ -35,10 +41,11 @@ const loaded = () => {
   sciences.forEach((obj, i) => {
     // qator ochamiz
     const row = document.createElement("tr");
+    row.id = obj.id;
     row.innerHTML = `
 <td>${i + 1}</td>
 <td>${obj.supject}</td>
-<td><button class="trash"><i class="fas fa-trash"></i></button></td>`;
+<td><button onclick="trashBtn(${obj.id})" class="trash"><i class="fas fa-trash"></i></button></td>`;
 
     tbody.appendChild(row)
   })
