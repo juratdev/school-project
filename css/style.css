@@ -156,28 +156,36 @@ a {
   gap: 8px;
   margin-top: 20px;
 }
-.rightside .content__table-search input {
+.rightside .content__table-search .search-form input {
   outline: none;
   padding: 4px 8px;
   color: #001845;
   font-size: 16px;
   font-weight: bold;
 }
-.rightside .content__table-search ::-moz-placeholder {
+.rightside .content__table-search .search-form ::-moz-placeholder {
   font-size: 14px;
   color: rgba(0, 24, 69, 0.6941176471);
 }
-.rightside .content__table-search :-ms-input-placeholder {
+.rightside .content__table-search .search-form :-ms-input-placeholder {
   font-size: 14px;
   color: rgba(0, 24, 69, 0.6941176471);
 }
-.rightside .content__table-search ::placeholder {
+.rightside .content__table-search .search-form ::placeholder {
   font-size: 14px;
   color: rgba(0, 24, 69, 0.6941176471);
 }
-.rightside .content__table-search button {
+.rightside .content__table-search .search-form button {
   padding: 8px 10px;
   background: linear-gradient(to left top, #001845, #023e7d);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.rightside .content__table-search .delete-all {
+  padding: 8px 10px;
+  background: red;
   color: #fff;
   border-radius: 5px;
   border: none;

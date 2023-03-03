@@ -25,8 +25,8 @@
           <li><a href="./students.html">O’quvchilar</a></li>
           <li><a href="./staffes.html">Xodimlar</a></li>
           <li><a href="./sciences.html">Fanlar</a></li>
-          <li><a class="active active-dark" href="#">Xonalar</a></li>
-          <li><a href="./lessons.html">Dars jadvallari</a></li>
+          <li><a href="./rooms.html">Xonalar</a></li>
+          <li><a class="active active-dark" href="#">Dars jadvallari</a></li>
         </ul>
 
       </aside>
@@ -47,7 +47,7 @@
 
         <section class="content">
           <div class="content__title">
-            <h2 class="title__text">Xonalar</h2>
+            <h2 class="title__text">Dars jadvallari</h2>
           </div>
 
           <div class="content__table">
@@ -63,18 +63,31 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Xona nomi</th>
-                  <th>Xona raqami</th>
+                  <th>Kunlar</th>
+                  <th>Fanlar</th>
+                  <th>Soatlar</th>
                   <th>O'chirish</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
-                  <td>Matematik</td>
-                  <td>15</td>
+                  <th rowspan="3">1</th>
+                  <td rowspan="3">Dushanba</td>
+                  <td>1-soat</td>
+                  <td>Matematika</td>
                   <td><button class="trash"><i class="fas fa-trash"></i></button></td>
                 </tr>
+                <tr>
+                  <td>2-soat</td>
+                  <td>Informatika</td>
+                  <td><button class="trash"><i class="fas fa-trash"></i></button></td>
+                </tr>
+                <tr>
+                  <td>3-soat</td>
+                  <td>Ona-tili</td>
+                  <td><button class="trash"><i class="fas fa-trash"></i></button></td>
+                </tr>
+                
 
               </tbody>
             </table>
@@ -90,7 +103,7 @@
 
 
  <script src="./js/global.js"></script>
-  <script src="./js/rooms.js"></script>
+  <script src="./js/lessons.js"></script>
 </body>
 
 </html>

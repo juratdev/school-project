@@ -187,27 +187,40 @@ a {
         gap: 8px;
         margin-top: 20px;
 
-        input {
-          outline: none;
-          padding: 4px 8px;
-          color: #001845;
-          font-size: 16px;
-          font-weight: bold;
+        .search-form {
+
+          input {
+            outline: none;
+            padding: 4px 8px;
+            color: #001845;
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          ::placeholder {
+            font-size: 14px;
+            color: #001845b1;
+          }
+
+          button {
+            padding: 8px 10px;
+            background: linear-gradient(to left top, #001845, #023e7d);
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+          }
         }
 
-        ::placeholder {
-          font-size: 14px;
-          color: #001845b1;
-        }
-
-        button {
+        .delete-all {
           padding: 8px 10px;
-          background: linear-gradient(to left top, #001845, #023e7d);
+          background: red;
           color: #fff;
           border-radius: 5px;
           border: none;
           cursor: pointer;
         }
+
       }
 
       table {
@@ -228,6 +241,7 @@ a {
           color: #fff;
           padding: 8px 10px;
         }
+
         .trash {
           padding: 5px 8px;
           background-color: #fff;

@@ -69,3 +69,7 @@ const findUser = () => {
   })
 
 }
+// Hamma tr-larni o'chirish
+const deleteAll = () => {
+  tbody.innerHTML = "";
+}
